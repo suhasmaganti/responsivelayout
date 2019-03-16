@@ -1,0 +1,162 @@
+* {
+	font-family: roboto condensed;
+  color: white;
+
+}
+
+h1 {
+  /*from Google fonts*/
+  font-family: Staatliches; 
+}
+
+h2,h3 {
+  /*from Font Awesome*/
+  font-family: trench;
+}
+
+/*Banner*/
+#banner {
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+  padding: 10px;
+}
+
+/*Car Image*/
+.car-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 10px solid #333;
+  padding: 5px;
+}
+
+body {
+  background-color: #000000;
+}
+
+p {
+  font-family: roboto condensed;
+  font-weight: lighter;
+}
+
+footer {
+	font-style: italic;
+	font-weight: bold;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div ul li i {
+  color: white;
+}
+
+
+#main-content {
+  text-align: center; 
+  padding: 10px;
+}
+
+/*Highlights Container*/
+#highlights > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+/*Highlights Links*/
+#highlights i {  
+  display: block;
+  font-family: roboto condensed;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+
+/*Highlights Title*/
+#highlights-title {
+  overflow: hidden;
+  font-weight: bold;
+  background-color: #333;
+  text-align: center;
+  padding: 10px;
+}
+
+/*Highlights Grid*/
+.highlights-grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto;
+  grid-gap: 5px;
+  text-align: center;
+}
+
+/*Highlights Columns*/
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+
+/*Skip to content*/
+a.skip { 
+  position:absolute; 
+  left:-10000px; 
+  top:auto; 
+  width:1px; 
+  height:1px; 
+  overflow:hidden;
+} 
+ 
+a.skip:focus { 
+  position:static; 
+  width:auto; 
+  height:auto; 
+}
+
+
+/*Media Queries*/
+/* Upto large phone devices (phones, 768px and down) */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .highlights-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px){
+
+  .highlights-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+  
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .highlights-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  }
+
+} 
