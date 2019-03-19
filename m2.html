@@ -2,12 +2,13 @@
 <html lang = "en">
 <head>
 	<meta charset = "UTF-8">
-	<meta name = ‘viewport’ content=‘width=device-width, initial-scale=1’>   
+	<meta name = 'viewport' content='width=device-width, initial-scale=1'>
 	<link rel = "stylesheet" href = "css/reset.css">
 	<link rel = "stylesheet" href = "css/main.css">
 	<link rel = "stylesheet" href = "css/nav.css">
 	<link rel="icon" href="imgs/mserieslogo.png">
-	<link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Condensed%7CStaatliches" rel="stylesheet">
 
 <title>M2</title>
@@ -16,17 +17,17 @@
 <body>
 	<a href="#content" class = "skip" tabindex= "0">Skip to Content</a>
 	<header>
-		<nav>
-			<ul>
-
-				<li><a href = "index.html">About</a></li>
-				<li><a href = "m2.html" class="active">M2</a></li>
-				<li><a href = "m3.html">M3</a></li>
-				<li><a href = "m4.html">M4</a></li>
-				<li><a href = "m5.html">M5</a></li>
-				<li><a href = "gallery.html">Gallery</a></li>
+		<nav class="topnav" id="myTopnav">
+		
+			<a href = "index.html" class="active" id="home">Home</a>
+			<a href = "m2.html">M2</a>
+			<a href = "m3.html">M3</a>
+			<a href = "m4.html">M4</a>
+			<a href = "m5.html">M5</a>
+			<a href = "gallery.html">Gallery</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i></a>
 				
-			</ul>
 		</nav>
 	</header>
 
@@ -85,6 +86,19 @@
 <footer>
   <p>*Disclaimer all the content on this page is taken from BMW USA</p>
 </footer>
+
+<!-- Javascript -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
 
 </body>
 </html>
